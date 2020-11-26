@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手风琴效果</title>
+</head>
+<style>
+    .container h2 {
+        background: gray;
+        padding: 0;
+        margin: 0;
+    }
+    .container p {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+    .container h2 a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    .container :target h2 a, .container h2 a:hover, .container h2 a:active {
+        color: red;
+    }
+    .container :target p {
+        height: 200px;
+        overflow: auto;
+    }
+</style>
+<body>
+    <div class='container'>
+        <div id='section_one'>
+            <h2><a href="#section_one">第一部分</a></h2>
+            <p>这是第一部分</p>
+        </div>
+        <div id='section_two'>
+            <h2><a href="#section_two">第二部分</a></h2>
+            <p>这是第二部分</p>
+        </div>
+        <div id='section_three'>
+            <h2><a href="#section_three">第三部分</a></h2>
+            <p>这是第三部分</p>
+        </div>
+    </div>
+</body>
+</html>
